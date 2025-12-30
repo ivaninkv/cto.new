@@ -4,9 +4,7 @@ pub fn build(b: *std.Build) void {
     const target = b.standardTargetOptions(.{});
     const optimize = b.standardOptimizeOption(.{});
 
-    const exe = b.addExecutable(.{
-        .name = "port-scanner",
-        .root_source_file = b.path("src/main.zig"),
+    const exe = b.addExecutable("port-scanner", b.path("src/main.zig"), .{
         .target = target,
         .optimize = optimize,
     });
