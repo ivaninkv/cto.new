@@ -13,7 +13,7 @@ A high-performance CLI port scanner written in Zig with support for parallel sca
 
 ## Requirements
 
-- Zig 0.12 or later (tested with Zig 0.13)
+- Zig 0.15.2 or later
 
 ## Building
 
